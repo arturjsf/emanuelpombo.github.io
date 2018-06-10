@@ -1,0 +1,154 @@
+/*GENERAL*/
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*NAVIGATION-MENU*/
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    font-size: 18px !important;
+    letter-spacing: 3px;
+}
+
+.navbar-default {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+.navbar li a{ 
+    color: black  !important;
+}
+
+.navbar-brand{
+    color: cyan !important;
+}
+
+.navbar-nav li.active a {
+    color:white !important;
+}
+
+.navbar-nav li a:hover {
+    color: whitesmoke !important;
+}
+
+
+
+
+/*HEADER*/
+
+.jumbotron { 
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+}
+
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+
+
+
+/*ABOUT*/
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.ePombo{
+    max-width: 400px;
+}
+
+
+
+/*SPONSORS*/
+.sponsor-logos{
+    max-width: 120px;
+    margin: 10px;
+}
+
+
+
+/*FOOTER*/
+
+.footer-style{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social-icons{
+    width:42px;
+    height:42px;
+    border:0;
+}
+
+.copyrights{
+    color: white;
+}
+
+
+
+
+/*SLIDE IN EFFECT*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+
+
+/*********MOBILE DEVICES***************/
+@media screen and (max-width: 600) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+}
